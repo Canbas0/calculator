@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    background-color: #f4f7fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #2c333f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 300px;
+    min-height: 400px;
+    border-radius: 10px;
+}
+
+form input {
+    outline: none;
+    border: none;
+}
+
+form input[type=text] {
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.buttons{
+    width: 100%;
+    padding: 5px;
+    margin: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons input[type=button]{
+    flex-basis: 22%;
+    height: 45px;
+    background-color: #232830;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #414c5e;
+    cursor: pointer;
+}
+
+.buttons input[value="="]{
+    flex-basis: 50%;
+}
+
+.buttons input.btn.operator{
+    color: cyan;
+}
